@@ -1,0 +1,13 @@
+body    {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+.gomiddle    {text-align: center;}
+
+.submit  {background-color: greenyellow; color: black; border-radius: 5px; border-color: greenyellow;}
+.reset   {background-color: red;  color: white; border-radius: 5px; border-color: red;}
+.button  {text-align: left; padding-top: 10px; padding-left: 20px;}
+.box      {border: 1px solid black;
+           padding: 10px;
+           margin: 30px auto;
+           width: 400px;}
+.box input:not([type = "radio"]):not(.submit):not(.reset)   {width: 130px; height: 10px;}
+.box select  {width: 150px; height: 18px; font-size: 10px;}
+label {padding-left:20px; display: inline-block; width: 100px;}
