@@ -13,7 +13,7 @@
             | <a href="signup.html">회원가입</a>
         </div>
 
-        <form method="post" action="http://www.example.com" autocomplete="on" >
+        <form method="post" action="http://www.example.com">
             <div class="box">
                 <div><label>이름: </label><input type ="text" name="name" autofocus/></div>
                 <div><label>생일: </label><input type="date" name="birth"></div>
@@ -22,9 +22,9 @@
                     <input type="radio" name="gender" value="female"/>여성
                 </div>
                 <div><label>학년: </label><input type="number" name="grade" min="1" max="3" step="1"/></div>
-                <div><label>아이디: </label><input type="text" name="id" required></div>
-                <div><label>비밀번호: </label><input type="password" name="pw" required></div>
-                <div><label>이메일: </label><input type="email" name="email" placeholder="email@gmail.com"/></div>
+                <div><label>아이디: </label><input type="text" name="id" required/></div>
+                <div><label>비밀번호: </label><input type="password" name="pw" required/></div>
+                <div><label>이메일: </label><input type="email" name="email" placeholder="email@gmail.com"  autocomplete="on"/></div>
                 <div><label>보안 질문: </label><select name="security">
                     <option disabled hidden selected>질문을 선택하세요</option>
                     <option>당신의 고향은 어디입니까?</option>
@@ -32,9 +32,9 @@
                     <option>당신이 가장 좋아하는 영화는 무엇입니까?</option>
                 </select></div>
                 <div><label>답변: </label><input type="text" name="answer"/></div>
-            
-            <p class="button"><input class="submit" type="submit" value="Signup">
-            <input class="reset" type="reset" value="Cancel"></p>
+                
+                <p class="button"><input class="submit" type="submit" value="Signup">
+                <input class="reset" type="reset" value="Cancel"></p>
             </div>
         </form>
     </body>
