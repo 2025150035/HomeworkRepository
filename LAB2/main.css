@@ -1,4 +1,4 @@
-body    {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+body    {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 14px;}
 .gomiddle    {text-align: center;}
 
 .submit  {background-color: greenyellow; color: black; border-radius: 5px; border-color: greenyellow;}
@@ -8,6 +8,15 @@ body    {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-seri
            padding: 10px;
            margin: 30px auto;
            width: 400px;}
-.box input:not([type = "radio"]):not(.submit):not(.reset)   {width: 130px; height: 10px;}
+
+.box input[type="text"],
+.box input[type="password"],
+.box input[type="email"],
+.box input[type="number"],
+.box input[type="date"] {
+    width: 130px;
+    height: 10px;
+}
+
 .box select  {width: 150px; height: 18px; font-size: 10px;}
 label {padding-left:20px; display: inline-block; width: 100px;}
