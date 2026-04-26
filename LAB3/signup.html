@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>sign up</title>
+        <link rel = "stylesheet" type = "text/css" href = "log.css"/>
+    </head>
+    <body>
+        <div class="gomiddle">
+            <div><h1>Welcome to INTERNET-PROGRAMMING MOVIE SITE</h1></div>
+            
+            <a href="login.html">로그인</a>
+            | <a href="signup.html">회원가입</a>
+        </div>
+
+        <form method="post" action="login.html">
+            <div class="box">
+                <div><label>이름: </label><input type ="text" name="name" autofocus/></div>
+                <div><label>생일: </label><input type="date" name="birth"/></div>
+                <div><label>성별: </label>
+                    <input type="radio" name="gender" value="male"/>남성
+                    <input type="radio" name="gender" value="female"/>여성
+                </div>
+                <div><label>학년: </label><input type="number" name="grade" min="1" max="3" step="1"/></div>
+                <div><label>아이디: </label><input type="text" name="id" required/></div>
+                <div><label>비밀번호: </label><input type="password" name="pw" required/></div>
+                <div><label>이메일: </label><input type="email" name="email" placeholder="email@gmail.com"  autocomplete="on"/></div>
+                <div><label>보안 질문: </label><select name="security">
+                    <option disabled="disabled" selected="selected">질문을 선택하세요</option>
+                    <option value="hometown">당신의 고향은 어디입니까?</option>
+                    <option value="mother">당신의 어머니의 성함은 무엇입니까?</option>
+                    <option value="movie">당신이 가장 좋아하는 영화는 무엇입니까?</option>
+                </select></div>
+                <div><label>답변: </label><input type="text" name="answer"/></div>
+                
+                <div class="button">
+                    <input class="submit" type="submit" value="Signup"/>
+                    <input class="reset" type="reset" value="Cancel"/>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
